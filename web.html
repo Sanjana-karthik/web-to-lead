@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="webToLead.js"></script>
+  </head>
+  <body>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <form
+      action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DIR000001tmeE"
+      method="POST"
+      onsubmit="beforesubmit()"
+    >
+      <input type="hidden" name="oid" value="00DIR000001tmeE" />
+      <input type="hidden" name="retURL" value="" />
+      <input type="hidden" name="Lead_Date__c" class="outputdate" />
+      T
+      <!--  ----------------------------------------------------------------------  -->
+      <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+      <!--  these lines if you wish to test in debug mode.                          -->
+      <!--  <input type="hidden" name="debug" value=1>                              -->
+      <!--  <input type="hidden" name="debugEmail"                                  -->
+      <!--  value="dilshadkarthik@gmail.com">                                       -->
+      <!--  ----------------------------------------------------------------------  -->
+      <h1>web to lead form</h1>
+      <label for="first_name">First Name</label
+      ><input
+        id="first_name"
+        maxlength="40"
+        name="first_name"
+        size="20"
+        type="text"
+        required="true"
+      /><br />
+
+      <label for="last_name">Last Name</label
+      ><input
+        id="last_name"
+        maxlength="80"
+        name="last_name"
+        size="20"
+        type="text"
+        required="true"
+      /><br />
+
+      <label for="email">Email</label
+      ><input
+        id="email"
+        maxlength="80"
+        name="email"
+        size="20"
+        type="text"
+        required="true"
+      /><br />
+      <label>Lead Date</label>
+      <input type="date" required="true" class="inputdate" />
+
+      <input type="submit" name="submit" class="suclass" />
+    </form>
+  </body>
+</html>
